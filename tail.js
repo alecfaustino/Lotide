@@ -2,10 +2,7 @@ const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }
-
-  if (actual !== expected) {
-    return console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
+  return console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
 const tail = (arr) => {
@@ -14,7 +11,7 @@ const tail = (arr) => {
 
 assertEqual(tail([5, 6, 7]).length, 2);
 assertEqual(tail(["Hello", "Lighthouse", "Labs"])[0], "Lighthouse");
-const testArr = ["Test"]
+const testArr = ["Test"];
 assertEqual(tail(testArr).length, 0);
 const mutableTest = [1, 2, 3 ,4];
 const mutated = tail(mutableTest);

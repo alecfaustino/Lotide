@@ -35,11 +35,11 @@ const middle = (arr) => {
   let midArr = [];
   if (isEven(arr.length)) {
     //example, if array length is 6, the middle indexes are 2 and 3
-    midArr[0] = arr[((arr.length / 2) - 1)];
-    midArr[1] = arr[(arr.length / 2)];
+    midArr.push(arr[((arr.length / 2) - 1)]);
+    midArr.push(arr[(arr.length / 2)]);
   } else {
     //example, if the array length is 5, the middle index is 2 so you round down 5/2
-    midArr[0] = arr[(Math.floor(arr.length / 2))];
+    midArr.push(arr[(Math.floor(arr.length / 2))]);
   }
   return midArr;
 };

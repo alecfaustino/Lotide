@@ -5,8 +5,6 @@ const assertEqual = (actual, expected) => {
   return console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
-//allItems is the array of strings that we need to look through
-//itemsToCount is an object specifying what to count.
 const countOnly = (allItems, itemsToCount) => {
   const results = {};
   for (const item of allItems) {

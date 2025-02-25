@@ -5,14 +5,13 @@ const assertEqual = (actual, expected) => {
   return console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const countOnly = (allItems, itemsToCount) => {
+const countOnly = (allItemsArr, itemsToCountObj) => { // change param names
   const results = {};
-  for (const item of allItems) {
+  for (const item of allItemsArr) {
     // if I don't add the &&, it asserts the last test as fail because it DOES have that name, but we don't want to count it. We only want to count it if it is true.
-    // original code was if (itemsToCount.hasOwnProperty(item) && (itemsToCount[item])) { but eslint asks to use this Object.prototype to make it more safe -- will have to ask why.. it still doesn't make sense
-    if (Object.prototype.hasOwnProperty.call(itemsToCount, item) && (itemsToCount[item])) {
+      if (itemsToCountObj.hasOwnProperty(item) && (itemsToCountObj[item])) {
       // if the item is not yet in the results object, start the count at 1
-      if (!results[item]) {
+      if (!results[item]) { 
         results[item] = 1;
       } else {
         // if it is already in the object, increment by 1.

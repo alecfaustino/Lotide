@@ -21,7 +21,7 @@ const eqArrays = (arr1, arr2) => {
 const eqObjects = (object1, object2) => {
   const keysOfFirst = (Object.keys(object1).sort()); // an array of keys
   const keysOfSecond = (Object.keys(object2).sort());
-  if (keysOfFirst.join() !== keysOfSecond.join()) { // to compare if the keys are the same in both
+  if (keysOfFirst.join() !== keysOfSecond.join()) { // to compare if the keys are the same in both I need to covert to string
     return false;
   }
   for (const keys in object1) {

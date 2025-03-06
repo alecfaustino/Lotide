@@ -4,12 +4,7 @@ const middle = (arr) => {
     return [];
   }
   // writing the isEven function for readability;
-  const isEven = (num) => {
-    if (num % 2 === 0) {
-      return true;
-    }
-    return false;
-  };
+  const isEven = (num) => num % 2 === 0;
   let midArr = [];
   if (isEven(arr.length)) {
     //example, if array length is 6, the middle indexes are 2 and 3

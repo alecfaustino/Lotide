@@ -36,7 +36,5 @@ assertArraysEqual(map(nums, (x) => x * 2), [2, 4, 6, 8]);
 const toDetermineEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 assertArraysEqual(map(toDetermineEven, (x) => x % 2 === 0), [false, true, false, true, false, true, false, true, false, true]);
 
-
-
-
+module.exports = map;
 

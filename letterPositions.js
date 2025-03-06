@@ -38,3 +38,5 @@ const letterPositions = (sentence) => {
 
 assertArraysEqual(letterPositions("hello").e, [1]);
 assertArraysEqual(letterPositions("where is the letter z").z, [20]);
+
+module.exports = letterPositions;

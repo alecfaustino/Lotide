@@ -39,3 +39,6 @@ const dogs = ['Fluffy', 'Candy', 'Chief', 'Buddy', 'Sagey', 'Daisy'];
 assertArraysEqual(takeUntil(dogs, dog => dog === "Sagey"), ['Fluffy', 'Candy', 'Chief', 'Buddy']);
 const numbers = [1, 3, 5, 8, 9];
 assertArraysEqual(takeUntil(numbers, x => x % 2 === 0), [1, 3, 5]);
+
+
+module.exports = takeUntil;

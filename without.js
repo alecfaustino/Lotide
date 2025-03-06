@@ -43,3 +43,5 @@ console.log(without(testArr2, [7]), testArr2);
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // Pass
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // Pass
+
+module.exports = without;

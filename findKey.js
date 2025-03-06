@@ -36,3 +36,5 @@ const dogs = {
 };
 assertEqual(findKey(dogs, myDog => myDog === "Sagey"), "4"); // "4" as a string since keys are strings
 assertEqual(findKey(dogs, myDog => myDog === "Mika"), undefined);
+
+module.exports = findKey;

@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@alecfaustino/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "This library was published for learning purposes and is not intended for use in production-grade software. It is a mini-clone of the Lodash library.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -14,7 +14,10 @@
     "url": "git+https://github.com/alecfaustino/Lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Alec Faustino",
+    "url": "https://github.com/alecfaustino"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alecfaustino/Lotide/issues"

@@ -1,6 +1,3 @@
-// assertArraysEqual(letterPositions("hello").e, [1]);
-// assertArraysEqual(letterPositions("where is the letter z").z, [20]);
-
 const assert = require('chai').assert;
 const letterPositions = require('../letterPositions');
 
